@@ -1,3 +1,4 @@
 mkdocs
 mkdocs-material
 Pygments
+mkdocs-table-reader-plugin
