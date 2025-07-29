@@ -1,0 +1,60 @@
+site_name: Linux Wiki
+# repo_url: https://github.com/Kacianoki/Eternal-Beta-Wiki
+# site_url: https://kacianoki.github.io/Eternal-Beta-Wiki
+copyright: Penis
+
+exclude_docs: overrides/
+docs_dir: docs/
+
+theme:
+  name: material
+  #custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: deep purple
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      accent: deep purple
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  #logo: assets/logo.png
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - admonition
+
+
+nav:
+  - Home: index.md
+  # - Luanium: 
+  #   - Guides:
+  #     - Intro: luanium/guides/intro.md
+  #     - Execution context: luanium/guides/exec-context.md
+  #     - API Basics:
+  #       - Intro: luanium/guides/api-basics/intro.md
+  #       - system_console: luanium/guides/api-basics/system-console.md
+  #       - system_io: luanium/guides/api-basics/system-io.md
+  #       - system: luanium/guides/api-basics/system.md
+  #   - Namespaces:
+  #     - List: luanium/namespaces/list.md
+  #     - system: luanium/namespaces/system.md
+  #     - system_console: luanium/namespaces/system_console.md
+  #     - system_io: luanium/namespaces/system_io.md
+  #     - system_monitors: luanium/namespaces/system_monitors.md
+  #     - system_text_json: luanium/namespaces/system_text_json.md
+  #     - system_text_regex: luanium/namespaces/system_text_regex.md
+
+plugins:
+  - search
