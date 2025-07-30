@@ -1,7 +1,9 @@
 # DaVinci Resolve Studio 20
 1. Качаем [отсюда](https://www.blackmagicdesign.com/products/davinciresolve). Если прошло уже много лет и 20 версия не актуальна - качаем [отсюда](https://www.blackmagicdesign.com/support/)
 2. Перекидываем архив в путь ~/.cache/yay/davinci-resolve-studio/
-3. Смотрим, чтобы на root диске было >~50 гигабайт.
+3. Смотрим, чтобы на root диске было >~50 гигабайт. 
+!!! seealso
+    Можно прописать `yay -Sc` чтобы почистить кеш
 4. Устанавливаем пакет 
 ```bash
 yay davinci-resolve-studio
