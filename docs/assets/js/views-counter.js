@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const path = window.location.pathname;
-
   if (!path) return;
 
-  fetch("https://linux-wiki-backend.nyarkus.workers.dev?path=" + encodeURIComponent(path), {
+  const workerUrl = "https://linux-wiki-backend.nyarkus.workers.dev?path=" + encodeURIComponent(path);
+
+  fetch(workerUrl, {
     method: "POST",
   }).catch(console.error);
 });

@@ -7,6 +7,7 @@ docs_dir: docs/
 theme:
   logo: assets/archlinux-1024.png
   favicon: assets/archlinux-1024.png
+  custom_dir: docs/overrides
   name: material
   features:
     - content.code.copy
@@ -39,8 +40,13 @@ markdown_extensions:
 plugins:
   - search
   - table-reader
+  - git-authors
+  - git-revision-date-localized:
+      # type: timeago
+      enable_creation_date: true
+      # enable_short_rev: true
 
 extra_javascript:
-  - extra/js/views-counter.js
+  - assets/js/views-counter.js
 extra_css:
-  - extra/css/package.css
+  - assets/css/package.css
