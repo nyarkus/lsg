@@ -5,6 +5,13 @@ export default {
 
     if (!path) return new Response("Missing path", { status: 400 });
 
+    if (request.method === "OPTIONS") {
+      return new Response(null, {
+        headers: corsHeaders,
+        status: 204,
+      });
+    }
+
     const key = `views:${path}`;
     const count = await env.ARTICLE_VIEWS.get(key);
 
