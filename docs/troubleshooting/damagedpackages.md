@@ -1,10 +1,7 @@
 # Повредили пакеты
 Чтобы проверить повреждённые пакеты, можно использовать утилиту "pacutils".
 
-1. Установка `pacutils`:
-```bash
-sudo pacman -Sy pacutils
-```
+1. Установливаем !pkg[pacutils]
 2. Проверка на повреждённые пакеты:
 ```bash
 sudo paccheck --sha256sum --quiet
