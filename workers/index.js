@@ -1,29 +1,51 @@
 export default {
   async fetch(request, env, ctx) {
-    const url = new URL(request.url);
-    const path = url.searchParams.get("path");
-
-    if (!path) return new Response("Missing path", { status: 400 });
+    const corsHeaders = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Max-Age": "86400",
+    };
 
     if (request.method === "OPTIONS") {
       return new Response(null, {
-        headers: corsHeaders,
         status: 204,
+        headers: corsHeaders,
+      });
+    }
+
+    const url = new URL(request.url);
+    const path = url.searchParams.get("path");
+    if (!path) {
+      return new Response("Missing path", {
+        status: 400,
+        headers: corsHeaders,
       });
     }
 
     const key = `views:${path}`;
-    const count = await env.ARTICLE_VIEWS.get(key);
 
+    let body, status;
     if (request.method === "POST") {
-      await env.ARTICLE_VIEWS.put(key, ((parseInt(await env.ARTICLE_VIEWS.get(key) || "0")) + 1).toString());
-      return new Response(count || "0");
+      const count = await env.ARTICLE_VIEWS.get(key);
+      const current = parseInt(await env.ARTICLE_VIEWS.get(key) || "0", 10);
+      await env.ARTICLE_VIEWS.put(key, (current + 1).toString());
+      body = count || "0";
+      status = 200;
+    } else if (request.method === "GET") {
+      const count = await env.ARTICLE_VIEWS.get(key);
+      body = count || "0";
+      status = 200;
+    } else {
+      return new Response("Method Not Allowed", {
+        status: 405,
+        headers: corsHeaders,
+      });
     }
 
-    if (request.method === "GET") {
-      return new Response(count || "0");
-    }
-
-    return new Response("Method Not Allowed", { status: 405 });
+    return new Response(body, {
+      status,
+      headers: corsHeaders,
+    });
   },
 };
