@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!path) return;
 
-  fetch("https://your-worker-domain.pages.dev?path=" + encodeURIComponent(path), {
+  fetch("https://linux-wiki-backend.nyarkus.workers.dev?path=" + encodeURIComponent(path), {
     method: "POST",
   }).catch(console.error);
 });
