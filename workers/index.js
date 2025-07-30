@@ -6,14 +6,14 @@ export default {
     if (!path) return new Response("Missing path", { status: 400 });
 
     const key = `views:${path}`;
+    const count = await env.ARTICLE_VIEWS.get(key);
 
     if (request.method === "POST") {
       await env.ARTICLE_VIEWS.put(key, ((parseInt(await env.ARTICLE_VIEWS.get(key) || "0")) + 1).toString());
-      return new Response("ok");
+      return new Response(count || "0");
     }
 
     if (request.method === "GET") {
-      const count = await env.ARTICLE_VIEWS.get(key);
       return new Response(count || "0");
     }
 
