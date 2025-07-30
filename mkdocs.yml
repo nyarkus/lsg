@@ -5,6 +5,8 @@ exclude_docs: overrides/
 docs_dir: docs/
 
 theme:
+  logo: assets/archlinux-1024.png
+  favicon: assets/archlinux-1024.png
   name: material
   features:
     - content.code.copy
