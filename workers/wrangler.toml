@@ -1,5 +1,6 @@
 name = "linux-wiki-backend"
-type = "javascript"
+compatibility_date = "2025-07-30"
+main = "index.js"
 
 [[kv_namespaces]]
 binding = "ARTICLE_VIEWS"
