@@ -18,7 +18,7 @@ export default {
       return new Response("Missing path parameter", { status: 400, headers: corsHeaders });
     }
 
-    const key = `views:${path.replace(/^\/*|\/*$/g, '')}`;
+    const key = `views:${path.replace(/^\/*|\/*$/g, '').trim()}`;
 
     if (request.method === "POST") {
       const current = parseInt(await env.ARTICLE_VIEWS.get(key) || "0", 10);
