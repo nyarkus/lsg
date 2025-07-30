@@ -1,0 +1,52 @@
+.md-content .pkg-command {
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.md-content .pkg-name {
+    display: inline;
+    position: static;
+}
+
+.md-content .pkg-type-repo .pkg-name {
+    color: #D87C0C;
+    text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+.md-content .pkg-type-repo:hover .pkg-name {
+    color: #e0902c;
+}
+
+.md-content .pkg-type-aur .pkg-name {
+    color: #359ed3;
+    text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+.md-content .pkg-type-aur:hover .pkg-name {
+    color: #6ac1f0;
+}
+
+.md-content .pkg-label,
+.md-content .aur-label {
+    font-size: 0.55em !important; 
+    font-weight: bold;
+    padding: 1px 5px !important;
+    border-radius: 4px !important;
+    
+    position: relative;
+    top: -0.8em;
+
+    color: #ffffff !important;
+    cursor: default;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    text-decoration: none !important; 
+    margin: 0 !important;
+}
+
+.md-content .pkg-label {
+    background-color: #D87C0C !important;
+}
+
+.md-content .aur-label {
+    background-color: #359ed3 !important;
+}

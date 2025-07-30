@@ -4,4 +4,4 @@ fi
 
 source venv/bin/activate
 pip install -r requirements.txt
-mkdocs serve
+python -m mkdocs serve
