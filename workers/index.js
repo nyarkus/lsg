@@ -18,7 +18,7 @@ export default {
       return new Response("Missing path parameter", { status: 400, headers: corsHeaders });
     }
 
-    const key = `views:${path}`;
+    const key = `views:${path.replace(/^\/*|\/*$/g, '')}`;
 
     if (request.method === "POST") {
       const current = parseInt(await env.ARTICLE_VIEWS.get(key) || "0", 10);
@@ -32,7 +32,7 @@ export default {
 
       const badgeData = {
         schemaVersion: 1,
-        label: "просмотров",
+        label: "Просмотров",
         message: count,
         color: "informational",
       };
