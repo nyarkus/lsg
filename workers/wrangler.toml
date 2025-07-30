@@ -1,4 +1,4 @@
-name = "views-counter"
+name = "linux-wiki-backend"
 type = "javascript"
 
 [[kv_namespaces]]
