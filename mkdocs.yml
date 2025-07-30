@@ -40,8 +40,7 @@ plugins:
   - search
   - table-reader
 
-# extra_javascript:
-#   - extra/js/package.js
-#   - https://kit.fontawesome.com/ac3a2d331a.js
+extra_javascript:
+  - extra/js/views-counter.js
 extra_css:
   - extra/css/package.css
