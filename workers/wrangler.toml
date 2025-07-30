@@ -1,0 +1,6 @@
+name = "views-counter"
+type = "javascript"
+
+[[kv_namespaces]]
+binding = "ARTICLE_VIEWS"
+id = "08c77744d7604a0893c11728bf638d25"
