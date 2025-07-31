@@ -1,7 +1,0 @@
-name = "lsg-backend"
-compatibility_date = "2025-07-30"
-main = "index.js"
-
-[[kv_namespaces]]
-binding = "ARTICLE_VIEWS"
-id = "08c77744d7604a0893c11728bf638d25"

@@ -2,13 +2,12 @@ site_name: Linux Survival Guide
 copyright: Copyright (c) 2025 nyarkus_, zedzad14
 repo_url: https://github.com/nyarkus/lsg
 
-exclude_docs: overrides/
 docs_dir: docs/
 
 theme:
   logo: assets/archlinux-1024.png
   favicon: assets/archlinux-1024.png
-  custom_dir: docs/overrides
+  #custom_dir: docs/overrides
   name: material
   features:
     - content.code.copy
