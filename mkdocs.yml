@@ -1,5 +1,5 @@
-site_name: Linux Wiki
-copyright: Copyright (c) 2025 nyarkus_ and contributors
+site_name: Linux Survival Guide 
+copyright: Copyright (c) 2025 nyarkus_, zedzad14
 
 exclude_docs: overrides/
 docs_dir: docs/

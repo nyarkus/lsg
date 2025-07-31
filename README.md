@@ -1,1 +1,3 @@
-# linux-wiki
+# Linux Survival Guide 
+
+Stupid wiki about ArchLinux
