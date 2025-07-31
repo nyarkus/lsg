@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../../../scripts/autodefrag/">
+        <link rel="prev" href="../../qemu/libvirt/how-to-passthrough-gpu/">
       
       
-        <link rel="next" href="../../Blackmagic%20Design/davinciresolvestudio20/">
+        <link rel="next" href="../../software/Adobe/lightroom/">
       
       
-      <link rel="icon" href="../../../assets/archlinux-1024.png">
+      <link rel="icon" href="../../assets/archlinux-1024.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Adobe Photoshop Lightroom Classic 2024 - Linux Survival Guide</title>
+        <title>Автоматическая дефрагментация ext4 - Linux Survival Guide</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/css/package.css">
+      <link rel="stylesheet" href="../../assets/css/package.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adobe-photoshop-lightroom-classic-2024" class="md-skip">
+        <a href="#ext4" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Linux Survival Guide" class="md-header__button md-logo" aria-label="Linux Survival Guide" data-md-component="logo">
+    <a href="../.." title="Linux Survival Guide" class="md-header__button md-logo" aria-label="Linux Survival Guide" data-md-component="logo">
       
-  <img src="../../../assets/archlinux-1024.png" alt="logo">
+  <img src="../../assets/archlinux-1024.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Adobe Photoshop Lightroom Classic 2024
+              Автоматическая дефрагментация ext4
             
           </span>
         </div>
@@ -225,9 +225,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Linux Survival Guide" class="md-nav__button md-logo" aria-label="Linux Survival Guide" data-md-component="logo">
+    <a href="../.." title="Linux Survival Guide" class="md-nav__button md-logo" aria-label="Linux Survival Guide" data-md-component="logo">
       
-  <img src="../../../assets/archlinux-1024.png" alt="logo">
+  <img src="../../assets/archlinux-1024.png" alt="logo">
 
     </a>
     Linux Survival Guide
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -314,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../core/grub/" class="md-nav__link">
+      <a href="../../core/grub/" class="md-nav__link">
         
   
   
@@ -375,7 +375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../core/troubleshooting/damagedpackages/" class="md-nav__link">
+      <a href="../../core/troubleshooting/damaged-packages/" class="md-nav__link">
         
   
   
@@ -451,7 +451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../devices/keyboard/" class="md-nav__link">
+      <a href="../../devices/keyboard/" class="md-nav__link">
         
   
   
@@ -519,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../gaming/artifacts/" class="md-nav__link">
+      <a href="../../gaming/artifacts/" class="md-nav__link">
         
   
   
@@ -542,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../gaming/onlinefixme/" class="md-nav__link">
+      <a href="../../gaming/onlinefixme/" class="md-nav__link">
         
   
   
@@ -610,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hardware/drive/" class="md-nav__link">
+      <a href="../../hardware/drive/" class="md-nav__link">
         
   
   
@@ -633,7 +633,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hardware/filesystems/" class="md-nav__link">
+      <a href="../../hardware/file-systems/" class="md-nav__link">
         
   
   
@@ -656,7 +656,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../hardware/tests/" class="md-nav__link">
+      <a href="../../hardware/tests/" class="md-nav__link">
         
   
   
@@ -724,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qemu/how-to-fast-boot/" class="md-nav__link">
+      <a href="../../qemu/how-to-fast-boot/" class="md-nav__link">
         
   
   
@@ -785,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qemu/libvirt/" class="md-nav__link">
+      <a href="../../qemu/libvirt/" class="md-nav__link">
         
   
   
@@ -808,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../qemu/libvirt/how-to-passthrough-gpu/" class="md-nav__link">
+      <a href="../../qemu/libvirt/how-to-passthrough-gpu/" class="md-nav__link">
         
   
   
@@ -843,18 +843,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -870,120 +872,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Scripts
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../scripts/autodefrag/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Автоматическая дефрагментация ext4
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Software
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            Software
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Adobe
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_8_1">
-            <span class="md-nav__icon md-icon"></span>
-            Adobe
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1003,20 +895,114 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
   
   
   <span class="md-ellipsis">
-    Adobe Photoshop Lightroom Classic 2024
+    Автоматическая дефрагментация ext4
     
   </span>
   
 
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+      </a>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Software
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Adobe
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            Adobe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software/Adobe/lightroom/" class="md-nav__link">
         
   
   
@@ -1027,50 +1013,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lightroom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lightroom артифачит
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1129,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Blackmagic%20Design/davinciresolvestudio20/" class="md-nav__link">
+      <a href="../../software/Blackmagic%20Design/davinci-resolve-studio-20/" class="md-nav__link">
         
   
   
@@ -1180,38 +1122,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#lightroom" class="md-nav__link">
-    <span class="md-ellipsis">
-      Lightroom артифачит
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1229,17 +1139,85 @@
   
 
 
-<h1 id="adobe-photoshop-lightroom-classic-2024">Adobe Photoshop Lightroom Classic 2024</h1>
-<p>Самая простая софтина для установки под линукс я считаю.</p>
+<h1 id="ext4">Автоматическая дефрагментация ext4</h1>
+<p>Этот скрипт при запуске считает насколько диск фрагментирован и если значение фрагментации выше порога - дефрагментирует. За всё время пользования ext4 у меня диски не особо фрагментировались в отличии от ntfs, но всё же.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+<span class="nv">THRESHOLD</span><span class="o">=</span><span class="m">30</span><span class="w"> </span><span class="c1"># (1)</span>
+<span class="nv">TARGETS</span><span class="o">=(</span><span class="w"> </span><span class="c1"># (2)</span>
+<span class="w">    </span><span class="s2">&quot;/mnt/hdd/&quot;</span>
+<span class="w">    </span><span class="s2">&quot;ещё какой-нибудь диск&quot;</span>
+<span class="o">)</span>
+
+<span class="k">if</span><span class="w"> </span>!<span class="w"> </span><span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>e4defrag<span class="w"> </span><span class="p">&amp;</span>&gt;<span class="w"> </span>/dev/null<span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ Утилита e4defrag не установлена. Установи её: sudo pacman -S e2fsprogs&quot;</span>
+<span class="w">    </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<span class="k">fi</span>
+
+<span class="k">for</span><span class="w"> </span>TARGET<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">TARGETS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TARGET</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ Путь не существует или не является директорией: </span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
+<span class="w">        </span><span class="k">continue</span>
+<span class="w">    </span><span class="k">fi</span>
+
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;🔍 Проверяю: </span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
+<span class="w">    </span><span class="nv">SCORE_LINE</span><span class="o">=</span><span class="k">$(</span>sudo<span class="w"> </span>e4defrag<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TARGET</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;Fragmentation score&quot;</span><span class="k">)</span>
+<span class="w">    </span><span class="nv">SCORE</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SCORE_LINE</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-o<span class="w"> </span><span class="s1">&#39;[0-9]\+&#39;</span><span class="k">)</span>
+
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;📊 </span><span class="nv">$TARGET</span><span class="s2"> → fragmentation score: </span><span class="nv">$SCORE</span><span class="s2">&quot;</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SCORE</span><span class="s2">&quot;</span><span class="w"> </span>-gt<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$THRESHOLD</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;⚠️  Фрагментация превышает порог </span><span class="nv">$THRESHOLD</span><span class="s2">. Запускаю дефрагментацию...&quot;</span>
+<span class="w">        </span>sudo<span class="w"> </span>e4defrag<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ Дефрагментация завершена для </span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
+<span class="w">    </span><span class="k">else</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ Фрагментация в норме. Пропускаем </span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
+<span class="w">    </span><span class="k">fi</span>
+
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;-----------------------------&quot;</span>
+<span class="k">done</span>
+</code></pre></div></td></tr></table></div>
 <ol>
-<li>Качаем торент <a href="https://rutracker.org/forum/viewtopic.php?t=6569675">отсюда</a>
-    или прямо с <a href="../lightroom.torrent">этой вики</a></li>
-<li>Распоковываем архив (да, он .exe) через wine и запускаем <code>LightroomPortable.exe</code> через wine.</li>
+<li>Пороговое значение фрагментации. Утилита <code>e4defrag</code> советует вот эти значения: <strong>[0-30 no problem: 31-55 a little bit fragmented: 56- needs defrag]</strong></li>
+<li>Массив папок</li>
 </ol>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<h3 id="lightroom">Lightroom артифачит</h3>
-<p>Идём в <code>Редактирование</code> -&gt; <code>Установки</code> -&gt; <code>Производительность</code> </p>
-<p>И ставим <strong>Использовать графический процессор</strong> на <code>Отключено</code>.</p>
+<p>Запускать этот скрипт надо от root прав. Можно использовать с crontab (пакет <a href="https://archlinux.org/packages/?name=cronie">cronie</a>, <a href="https://wiki.archlinux.org/title/Cron#Basic_commands">гайд</a>):
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>@weekly /usr/local/bin/defrag.sh
+</code></pre></div></td></tr></table></div></p>
 
 
 
@@ -1262,7 +1240,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 31, 2025 17:20:43 UTC">July 31, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 31, 2025 17:26:44 UTC">July 31, 2025</span>
   </span>
 
     
@@ -1272,7 +1250,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 31, 2025 17:20:43 UTC">July 31, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 31, 2025 17:26:44 UTC">July 31, 2025</span>
   </span>
 
     
@@ -1339,12 +1317,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
       
-        <script src="../../../assets/js/mathconfig.js"></script>
+        <script src="../../assets/js/mathconfig.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
