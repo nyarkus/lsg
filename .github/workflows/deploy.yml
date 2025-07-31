@@ -1,0 +1,31 @@
+name: deploy
+
+on:
+  push:
+     branche: main 
+
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        submodules: true
+
+    - name: Setup Python
+      uses: actions/setup-python@v5.6.0
+      with:
+        python-version: "3.11"
+
+    - name: Deploy
+      run: |
+        git pull
+        chmod +x deploy.sh
+        ./deploy.sh
+  
+      
