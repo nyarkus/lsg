@@ -908,15 +908,10 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      Дополнительные настройки для кейса с 2 ГП
+      1 ГП
     </span>
   </a>
   
@@ -924,6 +919,38 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nvidia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Дополнительные настройки для кейса с 2 ГП
+    </span>
+  </a>
   
 </li>
       
@@ -1275,15 +1302,10 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-        
           <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      Дополнительные настройки для кейса с 2 ГП
+      1 ГП
     </span>
   </a>
   
@@ -1291,6 +1313,38 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nvidia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nvidia
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Дополнительные настройки для кейса с 2 ГП
+    </span>
+  </a>
   
 </li>
       
@@ -1401,12 +1455,18 @@
 </li>
 </ol>
 <p>Готово!</p>
-<h3 id="2_1">Дополнительные настройки для кейса с 2 ГП</h3>
+<h4 id="1">1 ГП</h4>
+<p>🚧 WIP 🚧</p>
+<h3 id="nvidia">Nvidia</h3>
+<p>🚧 WIP 🚧</p>
+<h3 id="intel">Intel</h3>
+<p>🚧 WIP 🚧</p>
+<h2 id="2_1">Дополнительные настройки для кейса с 2 ГП</h2>
 <p>Когда видеокарта проброшена, нужно как-то выводить изображение с неё, для этого можно воспользоваться <span class="pkg-command pkg-type-aur" onclick="navigator.clipboard.writeText('yay -S looking-glass')" title="Нажмите, чтобы скопировать: yay -S looking-glass"><span class="pkg-name">looking-glass</span> <span class="aur-label">AUR</span></span>. Это такая штука, которая должна автоматически запускаться с виртуальной ОС, будет передавать изображение, а так же предостовлять управление.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>В этой часте гайда будет пример ТОЛЬКО с Windows. Linux Looking Glass пока адекватно не поддерживает.</p>
-<p>Эта часть гайда буквально взята с <a href="https://looking-glass.io/docs/B7/install_libvirt/#determining-memory">сайта Looking Glass'a</a> :/</p>
+<p>В этой часте гайда будет совместима <strong>ТОЛЬКО с Windows</strong>. Linux Looking Glass пока <strong>адекватно не поддерживает</strong>.</p>
+<p>Эта часть гайда буквально взята с <a href="https://looking-glass.io/docs/B7/install_libvirt/">сайта Looking Glass'a</a>, мы просто немного перефразируем часть ихней документации и после кинем вас к ним xd</p>
 </div>
 <ol>
 <li>
@@ -1452,8 +1512,21 @@
 </tbody>
 </table>
 </li>
-<li></li>
+<li>
+<p>в <strong>virt-manager</strong> открываем нашу виртуалку -&gt; Обзор -&gt; XML. В Тег <code>devices</code> дописываем:</p>
+</li>
 </ol>
+<p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;shmem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;looking-glass&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;model</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;ivshmem-plain&quot;</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;size</span><span class="w"> </span><span class="na">unit=</span><span class="s">&quot;M&quot;</span><span class="nt">&gt;</span>КОЛИЧЕСТВО<span class="w"> </span>ПАМЯТИ<span class="w"> </span>ПОСЧИТАННОЕ<span class="w"> </span>РАНЕЕ<span class="nt">&lt;/size&gt;</span>
+<span class="w">      </span><span class="nt">&lt;address</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;pci&quot;</span><span class="w"> </span><span class="na">domain=</span><span class="s">&quot;0x0000&quot;</span><span class="w"> </span><span class="na">bus=</span><span class="s">&quot;0x10&quot;</span><span class="w"> </span><span class="na">slot=</span><span class="s">&quot;0x01&quot;</span><span class="w"> </span><span class="na">function=</span><span class="s">&quot;0x0&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/shmem&gt;</span>
+</code></pre></div></td></tr></table></div>
+3. Дальше следуй <a href="https://looking-glass.io/docs/B7/install_libvirt/#keyboard-mouse-display-audio">официальным инструкциям</a></p>
 
 
 
@@ -1476,7 +1549,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 31, 2025 15:44:32 UTC">July 31, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 31, 2025 15:59:43 UTC">July 31, 2025</span>
   </span>
 
     
@@ -1486,7 +1559,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 31, 2025 15:44:32 UTC">July 31, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 31, 2025 15:59:43 UTC">July 31, 2025</span>
   </span>
 
     
