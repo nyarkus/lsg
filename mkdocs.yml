@@ -1,5 +1,6 @@
 site_name: Linux Survival Guide 
 copyright: Copyright (c) 2025 nyarkus_, zedzad14
+repo_url: https://github.com/nyarkus/lsg
 
 exclude_docs: overrides/
 docs_dir: docs/
