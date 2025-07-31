@@ -36,6 +36,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.details
+  - pymdownx.blocks.details
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist
   - admonition
   - extensions.pkg_extension
 
