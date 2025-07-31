@@ -1,4 +1,4 @@
-name = "linux-wiki-backend"
+name = "lsg-backend"
 compatibility_date = "2025-07-30"
 main = "index.js"
 
