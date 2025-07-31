@@ -34,6 +34,12 @@ markdown_extensions:
       linenums: true
   - pymdownx.superfences
   - pymdownx.inlinehilite
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.blocks.details
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist
   - admonition
   - extensions.pkg_extension
 
@@ -47,6 +53,8 @@ plugins:
       # enable_short_rev: true
 
 extra_javascript:
-  - assets/js/views-counter.js
+  - assets/js/mathconfig.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 extra_css:
   - assets/css/package.css
