@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../damagedpackages/">
       
       
-        <link rel="next" href="../troubleshooting/damagedpackages/">
+        <link rel="next" href="../../../devices/keyboard/">
       
       
-      <link rel="icon" href="../../assets/archlinux-1024.png">
+      <link rel="icon" href="../../../assets/archlinux-1024.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>Генерация конфигов для grub - Linux Survival Guide</title>
+        <title>Решение "unknown key '%INSTALLED_DB%' in local database" - Linux Survival Guide</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/css/package.css">
+      <link rel="stylesheet" href="../../../assets/css/package.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#grub" class="md-skip">
+        <a href="#unknown-key-installed_db-in-local-database" class="md-skip">
           Skip to content
         </a>
       
@@ -90,9 +90,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Linux Survival Guide" class="md-header__button md-logo" aria-label="Linux Survival Guide" data-md-component="logo">
+    <a href="../../.." title="Linux Survival Guide" class="md-header__button md-logo" aria-label="Linux Survival Guide" data-md-component="logo">
       
-  <img src="../../assets/archlinux-1024.png" alt="logo">
+  <img src="../../../assets/archlinux-1024.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Генерация конфигов для grub
+              Решение "unknown key '%INSTALLED_DB%' in local database"
             
           </span>
         </div>
@@ -225,9 +225,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Linux Survival Guide" class="md-nav__button md-logo" aria-label="Linux Survival Guide" data-md-component="logo">
+    <a href="../../.." title="Linux Survival Guide" class="md-nav__button md-logo" aria-label="Linux Survival Guide" data-md-component="logo">
       
-  <img src="../../assets/archlinux-1024.png" alt="logo">
+  <img src="../../../assets/archlinux-1024.png" alt="logo">
 
     </a>
     Linux Survival Guide
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -313,19 +313,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../grub/" class="md-nav__link">
         
   
   
@@ -336,7 +327,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -346,18 +336,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -373,7 +365,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Troubleshooting
@@ -387,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/damagedpackages/" class="md-nav__link">
+      <a href="../damagedpackages/" class="md-nav__link">
         
   
   
@@ -407,10 +399,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../troubleshooting/pacman-unkown-key-warn/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -421,6 +422,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -486,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../devices/keyboard/" class="md-nav__link">
+      <a href="../../../devices/keyboard/" class="md-nav__link">
         
   
   
@@ -554,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gaming/artifacts/" class="md-nav__link">
+      <a href="../../../gaming/artifacts/" class="md-nav__link">
         
   
   
@@ -577,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gaming/onlinefixme/" class="md-nav__link">
+      <a href="../../../gaming/onlinefixme/" class="md-nav__link">
         
   
   
@@ -645,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware/drive/" class="md-nav__link">
+      <a href="../../../hardware/drive/" class="md-nav__link">
         
   
   
@@ -668,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware/filesystems/" class="md-nav__link">
+      <a href="../../../hardware/filesystems/" class="md-nav__link">
         
   
   
@@ -691,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware/tests/" class="md-nav__link">
+      <a href="../../../hardware/tests/" class="md-nav__link">
         
   
   
@@ -759,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../qemu/how-to-fast-boot/" class="md-nav__link">
+      <a href="../../../qemu/how-to-fast-boot/" class="md-nav__link">
         
   
   
@@ -820,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../qemu/libvirt/" class="md-nav__link">
+      <a href="../../../qemu/libvirt/" class="md-nav__link">
         
   
   
@@ -843,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../qemu/libvirt/how-to-passthrough-gpu/" class="md-nav__link">
+      <a href="../../../qemu/libvirt/how-to-passthrough-gpu/" class="md-nav__link">
         
   
   
@@ -919,7 +921,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../scripts/autodefrag/" class="md-nav__link">
+      <a href="../../../scripts/autodefrag/" class="md-nav__link">
         
   
   
@@ -1025,7 +1027,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software/Adobe/Lightroom/" class="md-nav__link">
+      <a href="../../../software/Adobe/Lightroom/" class="md-nav__link">
         
   
   
@@ -1094,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../software/Blackmagic%20Design/davinciresolvestudio20/" class="md-nav__link">
+      <a href="../../../software/Blackmagic%20Design/davinciresolvestudio20/" class="md-nav__link">
         
   
   
@@ -1162,8 +1164,10 @@
   
 
 
-<h1 id="grub">Генерация конфигов для grub</h1>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>grub-mkconfig<span class="w"> </span>-o<span class="w"> </span>/boot/grub/grub.cfg
+<h1 id="unknown-key-installed_db-in-local-database">Решение "unknown key '%INSTALLED_DB%' in local database"</h1>
+<p>Если ты видишь такое предупреждение при установке - это не даёт тебе обновлять пакеты, на которые он жалуется.</p>
+<p>Я хз почему это возникает, но вот решение:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>find<span class="w"> </span>/var/lib/pacman/local/<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;desc&quot;</span><span class="w"> </span>-exec<span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;/^%INSTALLED_DB%$/,+2d&#39;</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
 </code></pre></div></td></tr></table></div>
 
 
@@ -1264,12 +1268,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
       
-        <script src="../../assets/js/mathconfig.js"></script>
+        <script src="../../../assets/js/mathconfig.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
