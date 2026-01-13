@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../../qemu/libvirt/how-to-passthrough-gpu/">
+        <link rel="prev" href="../drive/">
       
       
-        <link rel="next" href="../../software/Adobe/Lightroom/">
+        <link rel="next" href="../filesystems/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Автоматическая дефрагментация ext4 - Linux Survival Guide</title>
+        <title>Восстановление ФС - Linux Survival Guide</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ext4" class="md-skip">
+        <a href="#_1" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Автоматическая дефрагментация ext4
+              Восстановление ФС
             
           </span>
         </div>
@@ -665,18 +665,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -697,7 +699,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -715,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware/drive/" class="md-nav__link">
+      <a href="../drive/" class="md-nav__link">
         
   
   
@@ -740,10 +742,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../hardware/filesystem-repair/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Восстановление ФС
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -759,6 +788,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ext4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ext4
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -771,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware/filesystems/" class="md-nav__link">
+      <a href="../filesystems/" class="md-nav__link">
         
   
   
@@ -799,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hardware/tests/" class="md-nav__link">
+      <a href="../tests/" class="md-nav__link">
         
   
   
@@ -1024,20 +1084,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -1058,7 +1116,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1073,19 +1131,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../scripts/autodefrag/" class="md-nav__link">
         
   
   
@@ -1101,7 +1150,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1382,6 +1430,25 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ext4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ext4
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1400,85 +1467,29 @@
   
 
 
-<h1 id="ext4">Автоматическая дефрагментация ext4</h1>
-<p>Этот скрипт при запуске считает насколько диск фрагментирован и если значение фрагментации выше порога - дефрагментирует. За всё время пользования ext4 у меня диски не особо фрагментировались в отличии от ntfs, но всё же.</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span>
-<span class="normal">35</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/bin/bash</span>
-
-<span class="nv">THRESHOLD</span><span class="o">=</span><span class="m">30</span><span class="w"> </span><span class="c1"># (1)</span>
-<span class="nv">TARGETS</span><span class="o">=(</span><span class="w"> </span><span class="c1"># (2)</span>
-<span class="w">    </span><span class="s2">&quot;/mnt/hdd/&quot;</span>
-<span class="w">    </span><span class="s2">&quot;ещё какой-нибудь диск&quot;</span>
-<span class="o">)</span>
-
-<span class="k">if</span><span class="w"> </span>!<span class="w"> </span><span class="nb">command</span><span class="w"> </span>-v<span class="w"> </span>e4defrag<span class="w"> </span><span class="p">&amp;</span>&gt;<span class="w"> </span>/dev/null<span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ Утилита e4defrag не установлена. Установи её: sudo pacman -S e2fsprogs&quot;</span>
-<span class="w">    </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
-<span class="k">fi</span>
-
-<span class="k">for</span><span class="w"> </span>TARGET<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">TARGETS</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span>!<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TARGET</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ Путь не существует или не является директорией: </span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
-<span class="w">        </span><span class="k">continue</span>
-<span class="w">    </span><span class="k">fi</span>
-
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;🔍 Проверяю: </span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
-<span class="w">    </span><span class="nv">SCORE_LINE</span><span class="o">=</span><span class="k">$(</span>sudo<span class="w"> </span>e4defrag<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TARGET</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;Fragmentation score&quot;</span><span class="k">)</span>
-<span class="w">    </span><span class="nv">SCORE</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SCORE_LINE</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-o<span class="w"> </span><span class="s1">&#39;[0-9]\+&#39;</span><span class="k">)</span>
-
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;📊 </span><span class="nv">$TARGET</span><span class="s2"> → fragmentation score: </span><span class="nv">$SCORE</span><span class="s2">&quot;</span>
-
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$SCORE</span><span class="s2">&quot;</span><span class="w"> </span>-gt<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$THRESHOLD</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;⚠️  Фрагментация превышает порог </span><span class="nv">$THRESHOLD</span><span class="s2">. Запускаю дефрагментацию...&quot;</span>
-<span class="w">        </span>sudo<span class="w"> </span>e4defrag<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ Дефрагментация завершена для </span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
-<span class="w">    </span><span class="k">else</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;✅ Фрагментация в норме. Пропускаем </span><span class="nv">$TARGET</span><span class="s2">&quot;</span>
-<span class="w">    </span><span class="k">fi</span>
-
-<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;-----------------------------&quot;</span>
-<span class="k">done</span>
+<h1 id="_1">Восстановление ФС</h1>
+<h2 id="ext4">ext4</h2>
+<p>Восстановление этой фс в большинстве случаев осуществляется очень просто, буквально двумя командами:</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Если вы создавали ФС с какими-то нестандартными параметрами, по типу <code>block-size</code>, или с специфическим типом использования вроде <code>-T largefile</code>, то команда ниже выдаст <strong>неверные адреса</strong></p>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>mke2fs<span class="w"> </span>-n<span class="w"> </span>/dev/sdXN
 </code></pre></div></td></tr></table></div>
-<ol>
-<li>Пороговое значение фрагментации. Утилита <code>e4defrag</code> советует вот эти значения: <strong>[0-30 no problem: 31-55 a little bit fragmented: 56- needs defrag]</strong></li>
-<li>Массив папок</li>
-</ol>
-<p>Запускать этот скрипт надо от root прав. Можно использовать с crontab (пакет <a href="https://archlinux.org/packages/?name=cronie">cronie</a>, <a href="https://wiki.archlinux.org/title/Cron#Basic_commands">гайд</a>):
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>@weekly /usr/local/bin/defrag.sh
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Аргумент <code>-n</code> обязателен, иначе диск просто отформатируется :/</p>
+</div>
+<p>Ответ команды будет типо такого:
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>Superblock backups stored on blocks:
+    32768, 98304, 163840, 229376, 294912...
 </code></pre></div></td></tr></table></div></p>
+<p>Эти числа - адреса запасных суперблоков</p>
+<p>Дальше берёшь наименьшее число, например, <em>32768</em> и подставляешь его в команду:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>sudo<span class="w"> </span>e2fsck<span class="w"> </span>-y<span class="w"> </span>-b<span class="w"> </span><span class="m">32768</span><span class="w"> </span>/dev/sdXN
+</code></pre></div></td></tr></table></div>
+<p>Жмёшь энтер, на экране побегут всякие числа и ты сможешь ненадолго почувствовать себя хакером 😎 </p>
 
 
 
