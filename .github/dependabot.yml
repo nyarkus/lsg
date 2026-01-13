@@ -1,12 +1,5 @@
 version: 2
 updates:
-  # NuGet
-  - package-ecosystem: "nuget"
-    directory: "/"
-    target-branch: master
-    schedule:
-      interval: "weekly"
-  # GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/.github/"
     target-branch: master
