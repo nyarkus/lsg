@@ -7,5 +7,5 @@ Stupid wiki about ArchLinux
 - https://nyarkus.github.io/lsg/
 ### Cloudflare Pages
 - https://linux-wiki.pages.dev/
-- ~~https://yangvpopes.ru~~ (depricated)
+- ~~https://yangvpopes.ru~~ (deprecated)
 - https://arch.nyarkus.work/ 
